@@ -206,7 +206,7 @@ h1,h2,h3,h4,h5,h6
 header
 {
 	background-attachment: scroll;
-	background-image: url(../img/header-bg.jpg);
+	background-image: url(../img/banner.jpg);
 	background-position: center center;
 	background-repeat: none;
 	background-size: cover;
@@ -303,7 +303,7 @@ section h3.section-subheading
 {
 	display: block;
 	margin: 0 auto;
-	max-width: 400px;
+	max-width: 300px;
 	position: relative;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover
@@ -336,9 +336,11 @@ section h3.section-subheading
 {
 	margin-top: -12px;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4
 {
 	margin: 0;
+	text-transform:none
 }
 #portfolio .portfolio-item .portfolio-caption
 {
@@ -747,11 +749,11 @@ ul.social-buttons li a:hover,ul.social-buttons li a:focus,ul.social-buttons li a
 {
 	background-color: transparent;
 	cursor: pointer;
-	height: 75px;
+	height: 50px;
 	position: absolute;
 	right: 25px;
 	top: 25px;
-	width: 75px;
+	width: 50px;
 }
 .portfolio-modal .close-modal:hover
 {
@@ -760,7 +762,7 @@ ul.social-buttons li a:hover,ul.social-buttons li a:focus,ul.social-buttons li a
 .portfolio-modal .close-modal .lr
 {
 	background-color: #222;
-	height: 75px;
+	height: 50px;
 	margin-left: 35px;
 	ms-transform: rotate(45deg);
 	transform: rotate(45deg);
@@ -771,7 +773,7 @@ ul.social-buttons li a:hover,ul.social-buttons li a:focus,ul.social-buttons li a
 .portfolio-modal .close-modal .lr .rl
 {
 	background-color: #222;
-	height: 75px;
+	height: 50px;
 	ms-transform: rotate(90deg);
 	transform: rotate(90deg);
 	webkit-transform: rotate(90deg);
