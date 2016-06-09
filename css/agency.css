@@ -31,17 +31,17 @@ a,a:hover,a:focus,a:active,a.active
 }
 a
 {
-	color: #fed136;
+	color: #e62b1e;
 }
 a:hover,a:focus,a:active,a.active
 {
-	color: #fec503;
+	color: #fff;
 }
 h1,h2,h3,h4,h5,h6
 {
 	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: 700;
-	text-transform: uppercase;
+	text-transform: none;
 }
 .img-centered
 {
@@ -74,7 +74,13 @@ h1,h2,h3,h4,h5,h6
 {
 	background-image: none;
 }
-.btn-primary.disabled,.btn-primary[disabled],fieldset[disabled] .btn-primary,.btn-primary.disabled:hover,.btn-primary[disabled]:hover,fieldset[disabled] .btn-primary:hover,.btn-primary.disabled:focus,.btn-primary[disabled]:focus,fieldset[disabled] .btn-primary:focus,.btn-primary.disabled:active,.btn-primary[disabled]:active,fieldset[disabled] .btn-primary:active,.btn-primary.disabled.active,.btn-primary[disabled].active,fieldset[disabled] .btn-primary.active
+.btn-primary.disabled,.btn-primary[disabled],fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,.btn-primary.disabled.active,
+.btn-primary[disabled].active,fieldset[disabled] .btn-primary.active
 {
 	background-color: #fed136;
 	border-color: #fed136;
@@ -118,12 +124,14 @@ h1,h2,h3,h4,h5,h6
 }
 .navbar-default
 {
-	background-color: #222;
+	background-color: #fff;
 	border-color: transparent;
 }
 .navbar-default .navbar-brand
 {
 	color: #fed136;
+	position :relative;
+	top:-10px;
 	font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
 }
 .navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:active,.navbar-default .navbar-brand.active
@@ -149,7 +157,7 @@ h1,h2,h3,h4,h5,h6
 }
 .navbar-default .nav li a
 {
-	color: #fff;
+	color: #8e8e8e;
 	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: 400;
 	letter-spacing: 1px;
@@ -157,18 +165,18 @@ h1,h2,h3,h4,h5,h6
 }
 .navbar-default .nav li a:hover,.navbar-default .nav li a:focus
 {
-	color: #fed136;
+	color: #f62b0a;
 	outline: 0;
 }
 .navbar-default .navbar-nav>.active>a
 {
-	background-color: #fed136;
+	background-color: #f62b0a;
 	border-radius: 0;
 	color: #fff;
 }
 .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus
 {
-	background-color: #fec503;
+	background-color: #dd2609;
 	color: #fff;
 }
 @media (min-width:768px)
@@ -195,7 +203,7 @@ h1,h2,h3,h4,h5,h6
 	}
 	.navbar-default.navbar-shrink
 	{
-		background-color: #222;
+		background-color: #fff;
 		padding: 10px 0;
 	}
 	.navbar-default.navbar-shrink .navbar-brand
@@ -205,7 +213,7 @@ h1,h2,h3,h4,h5,h6
 }
 header
 {
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-image: url(../img/banner.jpg);
 	background-position: center center;
 	background-repeat: none;
@@ -266,6 +274,8 @@ header .intro-text .intro-heading
 section
 {
 	padding: 100px 0;
+	margin-top:10px
+
 }
 section h2.section-heading
 {
@@ -294,21 +304,21 @@ section h3.section-subheading
 	margin: 15px 0;
 	text-transform: none;
 }
-#portfolio .portfolio-item
+#speakers .portfolio-item
 {
-	margin: 0 0 0;
+	margin: 0 0 15px;
 	right: 0;
 }
-#portfolio .portfolio-item .portfolio-link
+#speakers .portfolio-item .portfolio-link
 {
 	display: block;
 	margin: 0 auto;
 	max-width: 300px;
 	position: relative;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover
+#speakers .portfolio-item .portfolio-link .portfolio-hover
 {
-	background: rgba(254,209,54,.9);
+	background: rgba(230,43,30,.9);
 	height: 100%;
 	moz-transition: all ease .5s;
 	opacity: 0;
@@ -317,11 +327,11 @@ section h3.section-subheading
 	webkit-transition: all ease .5s;
 	width: 100%;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover
+#speakers.portfolio-item .portfolio-link .portfolio-hover:hover
 {
 	opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content
+#speakers .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content
 {
 	color: #fff;
 	font-size: 20px;
@@ -332,17 +342,17 @@ section h3.section-subheading
 	top: 50%;
 	width: 100%;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i
+#speakers .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i
 {
 	margin-top: -12px;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4
+#speakers.portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#speakers .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4
 {
 	margin: 0;
-	text-transform:none
+	text-transform:uppercase
 }
-#portfolio .portfolio-item .portfolio-caption
+#speakers .portfolio-item .portfolio-caption
 {
 	background-color: #fff;
 	margin: 0 auto;
@@ -350,25 +360,25 @@ section h3.section-subheading
 	padding: 25px;
 	text-align: center;
 }
-#portfolio .portfolio-item .portfolio-caption h4
+#speakers .portfolio-item .portfolio-caption h4
 {
 	margin: 0;
 	text-transform: none;
 }
-#portfolio .portfolio-item .portfolio-caption p
+#speakers .portfolio-item .portfolio-caption p
 {
 	font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 16px;
 	font-style: italic;
 	margin: 0;
 }
-#portfolio *
+#speakers *
 {
 	z-index: 2;
 }
 @media (min-width:767px)
 {
-	#portfolio .portfolio-item
+	#speakers .portfolio-item
 	{
 		margin: 0 0 30px;
 	}
@@ -664,15 +674,17 @@ section#contact .text-danger
 }
 footer
 {
+	color:#fff;
 	padding: 25px 0;
 	text-align: center;
+	background-color:#363636
 }
 footer span.copyright
 {
 	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	line-height: 40px;
 	text-transform: none;
-	text-transform: uppercase;
+	text-transform: none;
 }
 footer ul.quicklinks
 {
@@ -703,7 +715,7 @@ ul.social-buttons li a
 }
 ul.social-buttons li a:hover,ul.social-buttons li a:focus,ul.social-buttons li a:active
 {
-	background-color: #fed136;
+	background-color:  #f62b0a;
 }
 .btn:focus,.btn:active,.btn.active,.btn:active:focus
 {
